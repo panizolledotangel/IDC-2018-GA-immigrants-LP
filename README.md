@@ -12,22 +12,22 @@ copy the url and paste it un your broswer.
 4. open host_data->Experimentation.ipynb" to run the experiment.
 
 ## Structure
-Inside jupyter home is the proyect structure:
+Inside jupyter home is the proyect structure:<br/>
 ├── data_sets<br/>
-├── experiments
-├── exp_output
-├── outputs
-├── sources
-│   ├── experiment
-│   ├── gas
-│   ├── tracker
-│   ├── gloaders
-│   ├── reparators
-|   ├── ga_config.py
-│   └── ga_skeleton.py
-├── Dataset-visualization.ipynb
-├── Experimentation.ipynb
-└── start-notebook.sh
+├── experiments<br/>
+├── exp_output<br/>
+├── outputs<br/>
+├── sources<br/>
+│   ├── experiment<br/>
+│   ├── gas<br/>
+│   ├── tracker<br/>
+│   ├── gloaders<br/>
+│   ├── reparators<br/>
+|   ├── ga_config.py<br/><br/>
+│   └── ga_skeleton.py<br/>
+├── Dataset-visualization.ipynb<br/>
+├── Experimentation.ipynb<br/><br/>
+└── start-notebook.sh<br/>
 
 **sources**: contains the code of the proyect.
 **data_set**: contains the enron data_set.
