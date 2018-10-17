@@ -13,9 +13,9 @@ copy the url and paste it un your broswer.
 
 ## Structure
 Inside jupyter home is the proyect structure:
-├── data_sets
-├── experiments
-├── exp_output
+├── data_sets\n
+├── experiments\n
+├── exp_output\n
 ├── outputs
 ├── sources
 │   ├── experiment
