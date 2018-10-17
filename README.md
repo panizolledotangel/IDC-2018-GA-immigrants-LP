@@ -23,25 +23,25 @@ Inside jupyter home is the proyect structure:<br/>
 │   ├── tracker<br/>
 │   ├── gloaders<br/>
 │   ├── reparators<br/>
-|   ├── ga_config.py<br/><br/>
+|   ├── ga_config.py<br/>
 │   └── ga_skeleton.py<br/>
 ├── Dataset-visualization.ipynb<br/>
-├── Experimentation.ipynb<br/><br/>
+├── Experimentation.ipynb<br/>
 └── start-notebook.sh<br/>
 
-**sources**: contains the code of the proyect.
-**data_set**: contains the enron data_set.
-**outputs**: this folder stores the pictures generated in the "Dataset-visualization.ipynb".
-**exp_output**: this folder stores the picture generated in the "Experimentation.ipynb".
-**experiments**: this folder stores the execution info of a experiment.
-**Dataset-visualization.ipynb**: note book for creating new dynamic networks using the Enron dataset.
-**Experimentation.ipynb**: note book for executing a experiment.
+* **sources**: contains the code of the proyect.
+* **data_set**: contains the enron data_set.
+* **outputs**: this folder stores the pictures generated in the "Dataset-visualization.ipynb".
+* **exp_output**: this folder stores the picture generated in the "Experimentation.ipynb".
+* **experiments**: this folder stores the execution info of a experiment.
+* **Dataset-visualization.ipynb**: note book for creating new dynamic networks using the Enron dataset.
+* **Experimentation.ipynb**: note book for executing a experiment.
 
 ## Sources estructure
-**experiment**: contains all the code related to experiment execution/storage/loading
-**gas**: code of the GA algorithm for dinamic community finding
-**tracker**: code for mathcing communities between different snapshots of a dynamic network
-**gloader**: code for loading the Enron dataset.
-**reparators**: code for the reparator operator.
-**ga_config.py**: python class for configuring a GA
-**ga_skeleton.py**: python class for executing a GA
+* **experiment**: contains all the code related to experiment execution/storage/loading
+* **gas**: code of the GA algorithm for dinamic community finding
+* **tracker**: code for mathcing communities between different snapshots of a dynamic network
+* **gloader**: code for loading the Enron dataset.
+* **reparators**: code for the reparator operator.
+* **ga_config.py**: python class for configuring a GA
+* **ga_skeleton.py**: python class for executing a GA
