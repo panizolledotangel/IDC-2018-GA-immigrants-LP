@@ -23,7 +23,7 @@ Inside jupyter home is the proyect structure:<br/>
 │   ├── tracker<br/>
 │   ├── gloaders<br/>
 │   ├── reparators<br/>
-|   ├── ga_config.py<br/>
+│   ├── ga_config.py<br/>
 │   └── ga_skeleton.py<br/>
 ├── Dataset-visualization.ipynb<br/>
 ├── Experimentation.ipynb<br/>
