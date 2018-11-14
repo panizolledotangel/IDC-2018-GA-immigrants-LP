@@ -9,38 +9,39 @@ Having installed docker (https://www.docker.com/) and docker-compose (https://do
 2. go to folder with the repository and run "docker-compose up".
 3. In the terminal find the line "Copy/paste this URL into your browser when you connect for the first time,to login with a token:"
 copy the url and paste it un your broswer.
-4. open host_data->notebooks->*.ipynb" to run the different experiments.
+4. open host_data->Experimentation.ipynb" to run the experiment.
 
 ## Structure
-Inside jupyter home is the proyect structure: <br>
-├── historic_evolution
-├── Hive
-├── notebooks
-│   ├── Case1_evolution.ipynb
-│   ├── Case_1_experiments.ipynb
-│   ├── Case2_evolution.ipynb
-│   ├── Case_2_experiments.ipynb
-│   ├── Case3_evolution.ipynb
-│   └── Case_3_experiments.ipynb
-├── sources
-│   ├── mongo_connection
-│   ├── plotting
-│   ├── problem_formulation
-|   ├── parallel_executions.py
-│   ├── SensorNetworkDesignABC.py
-│   └── settings.py
-└── test
+Inside jupyter home is the proyect structure:<br/>
+├── data_sets<br/>
+├── experiments<br/>
+├── exp_output<br/>
+├── outputs<br/>
+├── sources<br/>
+│   ├── experiment<br/>
+│   ├── gas<br/>
+│   ├── tracker<br/>
+│   ├── gloaders<br/>
+│   ├── reparators<br/>
+│   ├── ga_config.py<br/>
+│   └── ga_skeleton.py<br/>
+├── Dataset-visualization.ipynb<br/>
+├── Experimentation.ipynb<br/>
+└── start-notebook.sh<br/>
 
 * **sources**: contains the code of the proyect.
-* **Hive**: Custom Hive library for the ABC optimization.
-* **historic_evolution**: contains the output pictures of the an execution evolution.
-* **notebooks**: this folder stores the notebooks that allows to run the different experiments. The ones called evolution generates pictures with the fitness of the ABC for each iteration.
-* **test**: this folder stores python unittest files.
+* **data_set**: contains the enron data_set.
+* **outputs**: this folder stores the pictures generated in the "Dataset-visualization.ipynb".
+* **exp_output**: this folder stores the picture generated in the "Experimentation.ipynb".
+* **experiments**: this folder stores the execution info of a experiment.
+* **Dataset-visualization.ipynb**: note book for creating new dynamic networks using the Enron dataset.
+* **Experimentation.ipynb**: note book for executing a experiment.
 
 ## Sources estructure
-* **mongo_connection**: contains all the code related to experiment execution/storage/loading
-* **plotting**: code related to plot different metrics.
-* **problem_formulation**: code for the three different SNDP that are tested, includes the feasibility tests.
-* **parallel_executions.py**: code for loading several experiments in different threads.
-* **SensorNetworkDesignABC.py**: code for the ABC for solving the SNDP.
-* **settings.py**: python class for configuring the ABC for solving the SNDP
+* **experiment**: contains all the code related to experiment execution/storage/loading
+* **gas**: code of the GA algorithm for dinamic community finding
+* **tracker**: code for mathcing communities between different snapshots of a dynamic network
+* **gloader**: code for loading the Enron dataset.
+* **reparators**: code for the reparator operator.
+* **ga_config.py**: python class for configuring a GA
+* **ga_skeleton.py**: python class for executing a GA
